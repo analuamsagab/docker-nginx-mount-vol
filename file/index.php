@@ -68,6 +68,34 @@
             margin-right: 15px;
             align-items: left;
         }
+        .search-form {
+            display: flex;
+            justify-content: left;
+            margin-top: 10px;
+	    margin-left: 7px;
+        }
+
+        .search-form input[type="text"] {
+            padding: 12px;
+            border-radius: 8px 0 0 8px;
+            border: none;
+            width: 210px;
+            font-size: 16px;
+        }
+
+        .search-form button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 0 8px 8px 0;
+            background-color: #4B0082;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .search-form button:hover {
+            background-color: #6a0dad;
+        }
 
         .go-back { background-color: #4B0082; }
         .go-home { background-color: #b30000; }
@@ -177,13 +205,15 @@
 
 
  
-        </div>
+    </div>
 
+    <div class="search-form">
+        <form method="get" class="search-form">
+        <input type="text" name="search" placeholder="Ga nemu? cari disini aja bro...">
+        <button type="submit">Cari</button>
+    </form>
+    </div>
     <div class="table-container">
-    <form method="get" style="margin-bottom: 20px;">
-        <input type="text" name="search" placeholder="Ga nemu? cari disini aja bro..." style="padding: 10px; border-radius: 5px; border: none; width: 250px;">
-        <button type="submit" style="padding: 10px; border: none; border-radius: 5px; background-color: #4B0082; color: white;">Cari</button>
-        </form>
         <table>
             <tr>
                 <th>File Name</th>
@@ -228,7 +258,7 @@
     </div>
 
     <div class="landing-container">
-        <a class="back" href="https://bagastekaje.my.id"><strong>Pulang Yee</strong></a>
+        <a class="back" href="https://bagastekaje.my.id"><strong>Pulang Bro</strong></a>
     </div>
 </body>
 </html>
